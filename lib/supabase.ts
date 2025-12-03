@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient, Session, AuthChangeEvent } from '@supabase/supabase-js';
 
 // Load environment variables for the client
 // These variables must be prefixed with NEXT_PUBLIC_ for the client side
@@ -11,3 +11,6 @@ if (!supabaseUrl || !supabaseAnonKey) {
 
 // Create the Supabase client instance
 export const supabase = createClient(supabaseUrl!, supabaseAnonKey!);
+
+// FIX: Exporting types for use in other components
+export type { Session, AuthChangeEvent };
