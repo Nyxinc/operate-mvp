@@ -44,9 +44,9 @@ export default function RootLayout({
                 </Link>
               </div>
 
-              {/* Auth Button Placeholder */}
+              {/* Auth Button Placeholder - ***FIX IS HERE*** */}
               <div className="ml-4 flex items-center">
-                <Link href="/login" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md text-sm font-medium">
+                <Link href="/auth" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md text-sm font-medium">
                   Sign Up / Login
                 </Link>
               </div>
